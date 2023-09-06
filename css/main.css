@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600&display=swap');
+
+/* nav-font */
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+:root{
+    --font-z :'Hind Siliguri', sans-serif;
+}
+
+*{
+    margin:0;
+    padding: 0;
+
+}
+
+.nav-container{
+
+    max-width:100%;
+    padding: 10px 200px ;
+    display:inline-block;
+
+    background-color: #053B50;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-container > .text-logo span{
+    margin-right:500px ;
+    color: #EEEEEE;
+    font-size: 50px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.nav-container > .list-container ul{
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* overflow:hidden; */
+
+    /* background-color: skyblue; */
+}
+
+.nav-container > .list-container ul li a {
+
+    margin: 0px 10px;
+    padding: 10px 10px;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 18px ;
+    font-family:  Raleway;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-container > ul li a::before,
+.list-container > ul li a::after
+{
+    height: 100%;
+    width: 2px;
+    opacity: 0.5;
+    content: '';
+    position: absolute;
+
+    transition: 0.3s;
+
+    background-color: #EEEEEE;
+
+
+}
+
+.list-container > ul li a::before{
+    top: 0;
+    left: 0px;
+}
+
+.list-container > ul li a::after{
+    right: 0;
+    bottom: 0px;
+}
+
+.list-container > ul li a:hover:before,
+.list-container > ul li a:hover:after{
+    opacity: 1;
+    width: 100%;
+    height: 2px;
+}
+
+.main-container {
+
+    box-sizing: border-box;
+    height: 480px;
+    background-color: #228db1;
+
+}
+
+.main-container > .div-main-conatiner{
+
+    display: flex;
+}
+
+.main-container > .div-main-conatiner > .main-container-fir{
+
+    width: 100%;
+    /* height: 658px;  */
+
+    /* background-color: skyblue; */
+    /* background-color:tomato; */
+
+}
+
+.chi-fir{
+
+    position: absolute;
+    top: 180px;
+    left: 200px;
+}
+
+h1 , p , span {
+    color: #EEEEEE;
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+}
+
+h1{
+    color: rgb(104, 42, 32);
+    font-size: 30px;
+}
+
+.form-container{
+    padding: 20px 0 0 0;
+}
+
+.form-container > input {
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+.form-container > .email-inp{
+    width: 300px;
+    padding: 10px 10px ;
+    border: 2px solid #EEEEEE;
+}
+
+.form-container > .sub-btn{
+    padding: 13px 10px;
+    border:0px solid;
+    cursor: pointer;
+    color:#fff;
+    background-color: rgb(104, 42, 32);
+}
+
+.main-container > .div-main-conatiner > .main-container-sec{
+    width: 100%;
+
+
+    position: relative;
+}
+
+.main-container-sec > .img-container {
+    width: 500px;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+}
+
+@keyframes imgchange {
+    from{background-image: url("https://www.regexseo.com/blog/wp-content/uploads/2020/02/Discover-The-Top-Benefits-Of-Interactive-Web-Design.png");}
+    to{background-image: url("https://www.velocityconsultancy.com/wp-content/uploads/2018/11/post-42.jpg");}
+}
+
+.main-about-main{
+    height: 400px;
+    background-color: #176B87;
+}
+
+.about-main{
+    /* border: 1px solid #111; */
+    position: relative;
+    display: flex;
+
+}
+
+.main-about-main > span{
+    margin-bottom: 20px;
+    padding: 30px 0 30px 0;
+
+    font-size: 30px;
+    font-family:  Raleway;
+    font-weight: bold;
+
+    display: block;
+    text-align: center;
+
+}
+
+.about-main > .img-creater{
+    width: 100%;
+    height: 300px;
+
+    /* background-color: #fff; */
+}
+
+.about-main > .img-creater img{
+    border-radius: 100px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+.about-main > .info-container{
+    width:100%;
+    height: 300px;
+    /* background-color: #111; */
+}
+
+.info-creater{
+    display: flex;
+}
+
+.info-creater > .div-q1{
+    width: 100%;
+    height: 300px;
+    /* background-color: #fff; */
+}
+
+.info-creater > .div-ans1{
+    width: 100%;
+    height: 300px;
+    /* background-color: tomato; */
+}
+
+li{
+    font-family:  Raleway;   
+}
+
+.info-creater > .div-q1 ul,
+.info-creater > .div-ans1 ul {
+    list-style: none;
+}
+
+.info-creater > .div-q1 ul li,
+.info-creater > .div-ans1 ul li{
+    padding: 20px 0 20px 0;
+    color:#EEEEEE;
+}
+
+.info-creater > .div-q1 ul li{
+    font-weight: bold;
+}
+.info-creater > .div-ans1 ul li{
+    margin-right: 250px;
+}
+
+.exp-container{
+
+    width: 100%;
+    height: 600px ;
+    font-family:  Raleway;
+    background-color:#1b7999;
+}
+
+.exp-container span{
+    padding: 50px 0 30px 0;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.exp-list-pj{
+
+    /* margin-top: 200px; */
+    display: flex;
+
+    position: relative;
+}
+
+.project-1{
+    max-width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+}
+
+.project-1 span{
+    font-size: 20px;
+}
+
+
+.project-2{
+    max-width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 450px;
+}
+
+.project-2 span{
+    font-size: 20px;
+}
+
+.project-3{
+    max-width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 860px;
+
+}
+
+.project-3 span{
+    font-size: 20px;
+}
